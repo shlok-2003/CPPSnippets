@@ -7,11 +7,20 @@
 using namespace std;
 
 //! Colors
+
+#ifdef vscode
 const auto ANSI_RED = "\x1b[31m";
 const auto ANSI_GREEN = "\x1b[32m";
 const auto ANSI_YELLOW = "\x1b[33m";
 const auto ANSI_BLUE = "\x1b[34m";
 const auto ANSI_RESET = "\x1b[0m";
+#else
+const auto ANSI_RED = "";
+const auto ANSI_GREEN = "";
+const auto ANSI_YELLOW = "";
+const auto ANSI_BLUE = "";
+const auto ANSI_RESET = "";
+#endif
 
 //! Brackets
 static const auto lbrac = "[ ";
